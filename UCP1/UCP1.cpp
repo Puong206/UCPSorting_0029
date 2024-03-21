@@ -60,26 +60,24 @@ void input() {
 void selectionsort() {
 	int pass = 1;
 	int min_index, i, temp, j;
-	do {
-		for (i = 0; i < n; i++) {
+	for (i = 0; i < n; i++) {
 			cout << arya[i] << "";
-		}
-		cout << endl;
-		pass = pass + 1;
+	}
+	cout << endl;
+	pass = pass + 1;
 
-		for (j = 0; j < n - 1, j++;) {
-			min_index = j;
-			for (i = j + 1; i < n; i++) {
-				if (arya[i] < arya[min_index]) {
-					min_index = i;
+	for (j = 0; j < n - 1, j++;) {
+		min_index = j;
+		for (i = j + 1; i < n; i++) {
+			if (arya[i] < arya[min_index]) {
+				min_index = i;
 				}
 			}
-			temp = arya[j];
-			arya[j] = arya[min_index];
-			arya[min_index] = temp;
-		}while (pass <= n - 1);
+		temp = arya[j];
+		arya[j] = arya[min_index];
+		arya[min_index] = temp;
+		}
 	}
-}
 
 void display() {
 
